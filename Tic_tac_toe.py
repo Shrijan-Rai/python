@@ -1,17 +1,11 @@
 from tkinter import *
 from tkinter import messagebox
-
 root = Tk()
-root.title('Codemy.com - Tic-Tac-Toe')
-
-#root.geometry("1200x710")
+root.title('Tic-Tac-Toe')
 
 # X starts so true
 clicked = True
 count = 0
-
-
-
 
 # disable all the buttons
 def disable_all_buttons():
@@ -177,7 +171,7 @@ def b_click(b):
 		count += 1
 		checkifwon()
 	else:
-		messagebox.showerror("Tic Tac Toe", "Hey! That box has already been selected\nPick Another Box..." )
+		messagebox.showerror("Tic Tac Toe", " This box has already been selected\nPick Another Box" )
 
 # Start the game over!
 def reset():
